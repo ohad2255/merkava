@@ -1,14 +1,13 @@
 @import "color-palette.scss";
 @import "header.scss";
+@import "displays.scss";
 
 body {
 	background: $color-purpule-1;
 	color: $color-purpule-1;
 }
 
-nav {
-	display: none;
-}
+
 
 .container {
 	padding: 0;
