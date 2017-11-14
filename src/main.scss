@@ -6,6 +6,12 @@ header {
 	background-color: $blue-color-nav;
 	.top-sec-nav {
 		padding-top: 1.5em;
+
+		.nav-mobil{
+			img {
+				display: none;
+			}
+		}
 	}
 	.lng {
 		color: $text-white;
@@ -35,8 +41,11 @@ header {
 				}
 			}
 		}
-	}	
-}	
+		@media only screen and (max-width: 480px) {
+				display: none;
+		}
+	}
+}
 
         // nav 2 //
 .nav-2 {
@@ -45,7 +54,7 @@ header {
 	ul {
 		list-style: none;
 
-		li:nth-child(n+4){
+		li:nth-child(n+3){
 			color: $nav-2-text-grey;
 			font-family: Rubik;
 			font-size: 10pt;
@@ -56,4 +65,9 @@ header {
 		width: 225px;
 		height: 55px;
 	}
+
+	@media only screen and (max-width: 480px) {
+				display: none;
+	}
 }
+
