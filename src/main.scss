@@ -1,15 +1,13 @@
 @import "color-palette.scss";
-@import "header.scss";
-@import "displays.scss";
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=hebrew');
 
-body {
-	background: $color-purpule-1;
-	color: $color-purpule-1;
+header {
+	height: 188px;
+	background-color: $blue-color-nav;
 }
 
-
-
-.container {
-	padding: 0;
+.logo {
+	img{
+		
+	}
 }
-
