@@ -1,26 +1,31 @@
 @import "color-palette.scss";
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=hebrew');
 
-header {
-	height: 188px;
-	background-color: $blue-color-nav;
-	.top-sec-nav {
-		padding-top: 1.5em;
-
-		.nav-mobil{
-			img {
-				display: none;
-			}
-		}
-	}
-	.lng {
-		color: $text-white;
-		font-family: Rubik;
-		font-size: 17pt;
-	}
+body {
+	font-family: $main-font;
 }
 
+header {
 		// nav 1 //
+
+	.main-nav {
+		height: 188px;
+		background-color: $blue-color-nav;
+		.top-sec-nav {
+			padding-top: 1.5em;
+
+			.nav-mobil{
+				img {
+					display: none;
+				}
+			}
+		}
+		.lng {
+			color: $text-white;
+			font-size: 17px;
+		}
+	}
+}
 
 .low-sec-nav {
 	.nav-1 {
@@ -28,8 +33,7 @@ header {
 		ul {
 			list-style: none;
 			color: $text-white;
-			font-family: Rubik;
-			font-size: 12pt;
+			font-size: 17px;
 			padding-top: 2em;
 
 			li {
@@ -54,10 +58,10 @@ header {
 	ul {
 		list-style: none;
 
-		li:nth-child(n+3){
+		li:nth-child(n+1){
 			color: $nav-2-text-grey;
-			font-family: Rubik;
-			font-size: 10pt;
+			font-family: $main-font;
+			font-size: 12px;
 		}
 	}
 
