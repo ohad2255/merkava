@@ -20,13 +20,16 @@ header {
 		color: $text-white;
 		font-family: Rubik;
 		font-size: 17pt;
-		
-		a {
-			color:inherit;
-		}
+		border: $text-white;
+		padding-top: 0.2em;
 
 		li {
-			border-color: $text-white;
+			outline: 1px solid $text-white;
+			padding: 1em;
+			width: 6.5em;
+			a {
+			color:inherit;
+			}
 		}
 	}
 }
