@@ -4,10 +4,21 @@
 header {
 	height: 188px;
 	background-color: $blue-color-nav;
+	.top-sec-nav {
+		padding-top: 25pt;
+	}
+	.lng {
+		color: $text-white;
+	}
 }
 
 .logo {
 	img{
 		
 	}
+}
+
+.lng {
+	font-family: Rubik;
+	font-size: 17pt;
 }
