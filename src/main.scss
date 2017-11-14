@@ -14,23 +14,46 @@ header {
 	}
 }
 
-.low-sec-nav {
-	ul {
-		list-style: none;
-		color: $text-white;
-		font-family: Rubik;
-		font-size: 17pt;
-		border: $text-white;
-		padding-top: 0.2em;
+		// nav 1 //
 
-		li {
-			outline: 1px solid $text-white;
-			padding: 1em;
-			width: 6.5em;
-			a {
-			color:inherit;
+.low-sec-nav {
+	.nav-1 {
+		padding-bottom: -3em;
+		ul {
+			list-style: none;
+			color: $text-white;
+			font-family: Rubik;
+			font-size: 12pt;
+			padding-top: 2em;
+
+			li {
+				border: 1px solid $text-white;
+				padding: 1em;
+				width: 6.5em;
+				a {
+				color:inherit;
+				}
 			}
 		}
+	}	
+}	
+
+        // nav 2 //
+.nav-2 {
+	background-color: $nav-2-color;
+	
+	ul {
+		list-style: none;
+
+		li:nth-child(n+4){
+			color: $nav-2-text-grey;
+			font-family: Rubik;
+			font-size: 10pt;
+		}
+	}
+
+	img {
+		width: 225px;
+		height: 55px;
 	}
 }
-
