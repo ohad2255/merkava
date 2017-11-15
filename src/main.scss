@@ -54,7 +54,18 @@ header {
         // nav 2 //
 .nav-2 {
 	background-color: $nav-2-color;
-	
+	.left-buttons{
+		.button-1{
+			img{
+				height: 32px;
+			}
+		}
+		.button-2{
+			img{
+				height: 30px;
+			}
+		}
+	}
 	ul {
 		list-style: none;
 
@@ -65,10 +76,14 @@ header {
 		}
 	}
 
-	img {
+	.paz-logo-nav-2 {
+		img {
 		width: 225px;
 		height: 55px;
+		}
 	}
+
+	
 
 	@media only screen and (max-width: 480px) {
 				display: none;
