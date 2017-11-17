@@ -10,6 +10,14 @@ ul{
 	padding: 0;
 }
 
+button {
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    font-family: inherit;
+}
+
 .container{
 	width: 1320px;
 	max-width: 100%;
@@ -21,6 +29,10 @@ header {
 	.main-nav {
 		height: 188px;
 		background-color: $blue-color-nav;
+		
+		.top-sec-nav {
+			padding:0;
+		}
 
 		.lng {
 			color: $text-white;
@@ -44,6 +56,7 @@ header {
 }
 
 .low-sec-nav {
+	padding: 0;
 	.nav-1 {
 		padding: 0;
 
@@ -73,42 +86,84 @@ header {
 	}
 }
 
-        // nav 2 //
-.nav-2 {
+// nav 2 //
+.nav-2 {	
 	background-color: $nav-2-color;
-	.left-buttons{
-		.button-1{
-			img{
+	height: 100px;
+	
+	.container {
+		padding: 0;
+		height: 100%;
+	}
+	
+	.sub-nav-buttons {
+		height: 100%;
+		padding-left: 0;
+		width: 330px;
+	}
+	.left-buttons {
+		background-color: $med-grey;
+
+		button {
+			height: 100%;
+			width: 150px;
+			border: none;
+			
+			p {
+				font-family: $main-font;
+				color: $light-blue-nav;
+				font-size: 17px;
+				margin: 0;
+				text-align: right; 
+				line-height: 21px;
+			}
+		}
+
+		.button-1 {	
+			margin-right: 3px;
+			img {
 				height: 32px;
 			}
 		}
-		.button-2{
-			img{
+
+		.button-2 {
+			img {
 				height: 30px;
 			}
 		}
 	}
 	ul {
+		font-size:15px;
+		font-weight: 500;
 		list-style: none;
+		direction: rtl;
+		@media (max-width: 991px){
+			display: none;
+		}
 
-		li:nth-child(n+1){
-			color: $nav-2-text-grey;
-			font-family: $main-font;
-			font-size: 12px;
+		li {
+			a {
+				color: $dark-grey;
+				line-height: 15px;
+				padding: 0;
+			}
+			padding: 0 20px;
+			border-left: 1px solid $dark-grey;
+			&:first-child {
+				padding-right: 0;	
+			} 
+			&:last-child{
+				border-left: none;
+			}
 		}
 	}
 
 	.paz-logo-nav-2 {
+		margin-left: 40px;
 		img {
-		width: 225px;
-		height: 55px;
-		}
-	}
-
-	
-
-	@media only screen and (max-width: 480px) {
-				display: none;
+			width: 225px;
+			height: 55px;
+		}	
 	}
 }
 
