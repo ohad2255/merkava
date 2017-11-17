@@ -5,43 +5,65 @@ body {
 	font-family: $main-font;
 }
 
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 1320px;
+	max-width: 100%;
+}
+
 header {
 		// nav 1 //
 
 	.main-nav {
 		height: 188px;
 		background-color: $blue-color-nav;
-		.top-sec-nav {
-			padding-top: 1.5em;
 
-			.nav-mobil{
-				img {
-					display: none;
-				}
-			}
-		}
 		.lng {
 			color: $text-white;
 			font-size: 17px;
+		}
+
+		.search {
+			img { 
+				@media (max-width: 991px) { 
+					width: 57px;
+				}	
+			}
+		}
+
+		.nav-mobile {
+			img{
+				width: 60px;
+			}
 		}
 	}
 }
 
 .low-sec-nav {
 	.nav-1 {
-		padding-bottom: -3em;
+		padding: 0;
+
 		ul {
 			list-style: none;
 			color: $text-white;
 			font-size: 17px;
-			padding-top: 2em;
+			height: 70px;
+			width: 100%;
 
 			li {
+				&:hover {
+					color: $paz-yellow;
+					border-bottom: 4px solid $paz-yellow;
+					padding-top: 4px;
+				}
 				border: 1px solid $text-white;
-				padding: 1em;
-				width: 6.5em;
 				a {
-				color:inherit;
+					color:inherit;
+	
 				}
 			}
 		}
