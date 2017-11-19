@@ -243,6 +243,7 @@ header {
 	.gallery-nav-section {
 		background-color: $med-grey;
 		border-top: 8px solid $dark-grey;
+		padding: 0;
 
 		.gallery-nav {
 			padding: 32px 0 0 0;
@@ -255,6 +256,14 @@ header {
 
 				li {
 					flex-grow: 1;
+					
+					img{
+						padding-bottom: 20px;
+					}
+
+					.nav-text-con {
+
+					}
 
 					a{
 						width: 100%;
