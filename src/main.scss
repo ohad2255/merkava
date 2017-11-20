@@ -249,9 +249,13 @@ header {
 		.gallery-nav {
 			padding: 32px 0 0 0;
 
+			.nav-text-con{
+				box-sizing: border-box;
+			}
+
 			ul {
 				padding: 0;
-				margin:0;
+				margin: 0;
 				list-style: none;
 				text-align: center;
 
@@ -263,24 +267,30 @@ header {
 					a{
 						width: 100%;
 					}
-									
+
 				.gallery-nav-text {
 					//padding-top: 50px;
 					height: 130px;
 					background-color: $text-white;
-					box-shadow: inset -8px -8px 0px 4px $dark-grey;
+					box-shadow: inset -8px -8px 0px 0px $dark-grey;
+					border-top: 20px solid $text-white;
+					border-left: 10px solid $text-white;
 				}
 
-				p {
-					font-size: 17px;
-					font-family: $main-font;
-					color: $gallery-button-text;
-				}
+				li {
+					flex-grow: 1;
 
-				h2 {
-					font-size: 23px;
-					font-family: $main-font;
-					color: $gallery-button-text;
+					p {
+						font-size: 17px;
+						font-family: $main-font;
+						color: $gallery-button-text;
+					}
+
+					h2 {
+						font-size: 23px;
+						font-family: $main-font;
+						color: $gallery-button-text;
+					}
 				}
 			}
 		}	
