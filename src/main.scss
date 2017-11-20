@@ -258,6 +258,9 @@ header {
 				margin: 0;
 				list-style: none;
 				text-align: center;
+				@media (max-width: $screen-md-min){
+
+				}
 
 					img{
 						padding-bottom: 20px;
