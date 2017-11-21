@@ -239,18 +239,38 @@ header {
 	.gallery {
 		height: 435px;
 		background-color: $blue-color-nav;
+		text-align: center;
+		@media (max-width: $screen-md-min){
+			height: 1270px;	
+		}
+	}
+
+	.form {
+		height: 996px;
+		background-color: $paz-yellow;
+		text-align: center;
 	}
 
 	.gallery-nav-section {
 		background-color: $med-grey;
 		border-top: 8px solid $dark-grey;
 		padding: 0;
+		@media (max-width: $screen-md-min){
+			border: none;
+			padding-top: 100px;
+			background-color: $text-white;
+
+		}
 
 		.gallery-nav {
-			padding: 32px 0 0 0;
-
+			@media (min-width: $screen-md-min){
+				padding: 32px 0 0 0;
+			}
 			.nav-text-con{
 				box-sizing: border-box;
+				@media (max-width: $screen-md-min){
+						padding-top: 30px;
+				}
 			}
 
 			ul {
@@ -258,13 +278,19 @@ header {
 				margin: 0;
 				list-style: none;
 				text-align: center;
-				@media (max-width: $screen-md-min){
-
-				}
+				
+					.icons-mobile{
+						@media (max-width: $screen-md-min){
+						background-color: $med-grey;
+						height: 575px;
+						}
+					}
 
 					img{
-						padding-bottom: 20px;
-						padding-left: 13px;
+						//box-shadow: -8px -8px 0px 0px $med-grey;
+						@media (max-width: $screen-md-min){
+							height: 485px;
+						}
 					}
 
 					a{
@@ -278,21 +304,38 @@ header {
 					box-shadow: inset -8px -8px 0px 0px $med-grey;
 					border-top: 20px solid $text-white;
 					border-left: 10px solid $text-white;
+					@media (max-width: $screen-md-min){
+						height: 290px;
+					}
 				}
 
 				li {
 					flex-grow: 1;
 
+					@media (max-width: $screen-md-min){
+						padding-bottom: 100px;
+						width: 844px;
+				}
+
+
 					p {
 						font-size: 17px;
 						font-family: $main-font;
 						color: $gallery-button-text;
+						@media (max-width: $screen-md-min){
+							font-size: 22px;
+							color: $mobile-text-color;
+						}
 					}
 
 					h2 {
 						font-size: 23px;
 						font-family: $main-font;
 						color: $gallery-button-text;
+							@media (max-width: $screen-md-min){
+								font-size: 27px;
+								color: $mobile-text-color;
+							}
 					}
 				}
 			}
