@@ -59,7 +59,7 @@ header {
 			}
 		}
 
-		.nav-mobile {
+		.manu-mobile {
 			img{
 				@media (max-width: $screen-md-min) { 
 					width: 60px;
@@ -110,20 +110,23 @@ header {
 	}
 	.container {
 		height: 100%;
-		.nav-icon-round-mobile {
-		padding: 0;
-		height: 100%;
+		.l-side-gray-nav {
+			padding-left: 0;
+			.nav-icon-round-mobile {
+			padding: 0;
 			height: 100%;
-			button{
-				background-color: $nav-2-color;
-				img{
-					height: 60px;
-					width: 60px;
-				}
-				p {
-					font-family: $main-font;
-					color: $light-blue-nav;
-					font-size: 24px;
+				height: 100%;
+				button{
+					background-color: $nav-2-color;
+					img {
+						height: 60px;
+						width: 60px;
+					}
+					p {
+						font-family: $main-font;
+						color: $light-blue-nav;
+						font-size: 24px;
+					}
 				}
 			}
 		}
@@ -215,7 +218,6 @@ header {
 	.paz-logo-nav-2 {
 		margin-left: 40px;
 		img {
-			width: 225px;
 			@media (max-width: $screen-md-min) { 
 				width: 100%;
 				//width: 370px;
@@ -263,9 +265,9 @@ header {
 
 		.gallery-nav {
 			@media (min-width: $screen-md-min){
-				padding: 32px 0 0 0;
+
 			}
-			.nav-text-con{
+			.nav-text-con {
 				box-sizing: border-box;
 				@media (max-width: $screen-md-min){
 						padding-top: 30px;
@@ -278,11 +280,33 @@ header {
 				list-style: none;
 				text-align: center;
 				
-					.icons-mobile{
+					.icons-mobile {
+						padding: 30px 0 50px 0;
 						@media (max-width: $screen-md-min){
 						background-color: $med-grey;
 						height: 575px;
 						}
+
+						.background-icon {
+							width: 138px;
+							height: 138px;
+							background-color: #0070af;
+							border-radius: 50%;
+							border: 5px solid $text-white;
+							box-shadow: 8px 8px 10px 0px $icon-shadow-color;
+							&:hover {
+								transform: scale(1.2);
+							}
+
+							.wash-icon {
+								width: 78%;
+							}
+
+							.fix-icon {
+								padding-left: 2px;
+							}
+						}
+						
 					}
 
 					img{
@@ -298,6 +322,10 @@ header {
 
 				.gallery-nav-text {
 					//padding-top: 50px;
+					&:hover {
+					box-shadow: inset -8px -8px 0px 0px $paz-yellow;
+					}
+
 					height: 130px;
 					background-color: $text-white;
 					box-shadow: inset -8px -8px 0px 0px $med-grey;
