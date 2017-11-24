@@ -217,7 +217,9 @@ header {
 
 	.paz-logo-nav-2 {
 		margin-left: 40px;
+
 		img {
+			width: 235px;
 			@media (max-width: $screen-md-min) { 
 				width: 100%;
 				//width: 370px;
@@ -400,23 +402,43 @@ header {
 			.left-footer {
 				direction: rtl;
 				flex-grow: 1;
+				margin-right: 120px;
 
 				ul {
 					font-size: 20px;
 					color: $nav-2-text-grey;
-					img{
-						margin-bottom: 10px;
-						height: 33px;
+					a {
+						color: $nav-2-text-grey;
+						img{
+							margin-bottom: 10px;
+							height: 33px;
+						}
 					}
-
 				}
 			}
 
 			.right-footer {
+				direction: rtl;
+
+				.r-ul{
+					margin-left: 32px;
+				}
+
 				ul {
+					width: 165px;
+					text-align: right;
 					font-size: 15px;
 					font-weight: 600;
 					color: $nav-2-text-grey;
+					border-left: 1px solid $footer-lines;
+
+					a {
+						color: $nav-2-text-grey;
+
+						li {
+							line-height: 32px;
+						}
+					}
 				}
 			}
 		}
