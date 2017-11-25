@@ -398,7 +398,7 @@ header {
 	footer {
 		.top-footer {
 			height: 260px;
-
+			border-bottom: 1px solid $footer-lines;
 			.left-footer {
 				direction: rtl;
 				flex-grow: 1;
@@ -408,7 +408,11 @@ header {
 					font-size: 20px;
 					color: $nav-2-text-grey;
 					a {
+						padding: 26.5px 0 26.5px 25px;
 						color: $nav-2-text-grey;
+						&:nth-child(-n+3) {
+						border-left: 1px solid $footer-lines;
+						}
 						img{
 							margin-bottom: 10px;
 							height: 33px;
@@ -419,6 +423,7 @@ header {
 
 			.right-footer {
 				direction: rtl;
+				padding-right: 35px;
 
 				.r-ul{
 					margin-left: 32px;
@@ -438,6 +443,31 @@ header {
 						li {
 							line-height: 32px;
 						}
+					}
+				}
+			}
+		}
+
+		.bottom-footer {
+			direction: rtl;
+			height: 100px;
+
+			.trademark {
+				padding-right: 35px;
+				img {
+					width: 61px;
+				}
+				p{
+					margin-bottom: 0;
+				}	
+			}
+
+			ul {
+				li {
+					border-left: 1px solid $footer-lines;
+
+					&:nth-child(-n+2) {
+				 	padding: 0 30px 0 30px;
 					}
 				}
 			}
