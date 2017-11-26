@@ -16,7 +16,7 @@
     	<div class="main-nav container-fluid d-flex  flex-column">
     		
     		<!-- top section -->
-    		<div class="container top-sec-nav align-items d-flex justify-content-between align-items-center col">
+    		<div class="container top-sec-nav align-items-center d-flex justify-content-between align-items-center col">
 	    		<div class="search">
 	    			<img src="img/search.svg" class="search">
 	    		</div>
@@ -30,8 +30,10 @@
 		    		ENG
 				</div>
 				<div class="manu-mobile d-lg-none">
-		    		<img src="img/menu.svg"
-    				 class="menu">
+		    		<img src="img/menu.png"
+				     srcset="img/menu@2x.png 2x,
+				             img/menu@3x.png 3x"
+				     class="menu">
 				</div>
 			</div>
 		
@@ -73,26 +75,24 @@
 		<div class="nav-2 container-fluid d-flex align-items-center justify-content-between">
     		<div class="container d-flex justify-content-lg-between">
     			<div class="l-side-gray-nav d-flex justify-content-lg-between col">
-    				<div class="nav-icon-round-mobile d-lg-none d-flex align-items-center">
-	    				<button class="d-flex align-items-center flex-column">
-				    			<img src="img/menu.png"
-							     srcset="img/menu@2x.png 2x,
-							             img/menu@3x.png 3x"
-							     class="menu">
+	    			<div class="left-buttons d-flex justify-content-start col">
+	    				<button class="button-3 button d-flex align-items-center justify-content-center flex-column d-lg-none">
+				    			<img src="img/menu.svg"
+     							class="menu">
 				    			<p>תפריט</p>
 				    	</button>
-			    	</div>
-	    			<div class="sub-nav-buttons left-buttons d-flex justify-content-start">
 		    			<button class="button button-1 d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
 		    				<img src="img/signin.svg"
  							class="signin">
-		    				<p>הרשמה<br>לאתר פזומט</p>
+		    				<p class="d-none d-lg-block">הרשמה<br>לאתר פזומט</p>
+		    				<p class="d-lg-none">הרשמה</p>
 		    			</button>
 	    			 
 		    			<button class="button button-2 d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
 		    				<img src="img/login.svg"
  							class="login">
-		    				<p>כניסה<br>לאיזור האישי</p>
+		    				<p class="d-none d-lg-block">כניסה<br>לאיזור האישי</p>
+		    				<p class="d-lg-none">כניסה</p>
 		    			</button>
 			    	</div>
 	    		</div>
