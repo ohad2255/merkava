@@ -732,10 +732,12 @@ header {
 					padding: 0 9px 0 0;
 					border-bottom: 1px solid $footer-lines;
 				}
+				padding: 0;
 
 				a {
 					
 					.last {
+						padding: 0;
 						border: none;
 						@media (max-width: $screen-xs-min) {
 								padding: 0;
