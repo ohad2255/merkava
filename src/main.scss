@@ -514,14 +514,14 @@ header {
 
 	footer {
 		@media (max-width: $screen-xs-min) {
-			height: 453px;
 			background-color: $nav-2-color;
 		}
 		.top-footer {
 			height: 260px;
 			border-bottom: 1px solid $footer-lines;
 			@media (max-width: $screen-xs-min) {
-				height: 366px;
+				height: 320px;
+				border: none;
 			}
 
 			.left-footer {
@@ -607,19 +607,20 @@ header {
 			}
 
 			.footer-icon-nav-mobile {
-				margin: 31px 44px 37px 39px;
 				direction: rtl;
+			    height: 160px;
+				padding: 0 30px;
+				margin: 30px 0;
+
 				.icon-h {
-					width: 85px;
-					height: 18px;
 					font-size: 15px;
 					text-align: center;
 					color: $nav-2-text-grey;
 					margin-top: 9px;
 				}
 				.top {
-					.top-t {
-						padding-left: 47px;
+					.top-t, .bottom-t {
+						padding: 0;
 					}
 					
 					.icon1 {
@@ -631,9 +632,9 @@ header {
 					}
 				}	
 				.bottom {
-					padding-top: 40px;
-					.top-b {
-						padding-left: 47px;
+		
+					.top-b, .bottom-b {
+						padding: 0;
 					}
 
 					.icon3 {
@@ -698,32 +699,72 @@ header {
 			direction: rtl;
 			height: 100px;
 			@media (max-width: $screen-xs-min) {
-				height: 84px;
+				height: 170px;
 			}
 
 			.trademark {
 				padding-right: 35px;
+
 				img {
 					width: 61px;
 				}
-				p{
+
+				p {
 					margin-bottom: 0;
 				}	
+
+				@media (max-width: $screen-xs-min) {
+					padding: 0;
+					height: 84px;
+					img {
+						width: 33px;
+					}
+					p {
+						font-size: 10px;
+						color: $nav-2-text-grey;
+						padding-top: 5px;
+					}
+				}
 			}
 
-			ul {
-				.last {
+			.footer-nav {
+				@media (max-width: $screen-xs-min) {
+					padding: 0 9px 0 0;
+					border-bottom: 1px solid $footer-lines;
+				}
+
+				a {
+					
+					.last {
 						border: none;
+						@media (max-width: $screen-xs-min) {
+								padding: 0;
+						}
 					}
 
-				li {
-					border-left: 1px solid $footer-lines;
-					font-size: 15px;
-					font-weight: 600;
-					color: $nav-2-text-grey;
+					li {
 
-					&:nth-child(-n+2) {
-				 	padding: 0 30px 0 30px;
+						border-left: 1px solid $footer-lines;
+						font-size: 15px;
+						font-weight: 600;
+						color: $nav-2-text-grey;
+
+						&:nth-child(-n+2) {
+					 		padding: 0 30px 0 30px;
+					 		@media (max-width: $screen-xs-min) {
+								padding: 0 0 0 9px;
+							}
+						}
+
+						@media (max-width: $screen-xs-min) {
+							opacity: 0.8;
+							font-size: 13px;
+							letter-spacing: 1.5px;
+							text-align: center;
+							color: $nav-2-text-grey;
+							text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+							font-weight: 400;
+						}
 					}
 				}
 			}
