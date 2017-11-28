@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>paz</title>
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.css">
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>	
@@ -131,13 +132,38 @@
 	<section class="container top-section">
 		<div class="gallery">
 			<div class="Locating-stations">
-			<h1>--gallery--</h1>
+				<div class="swiper-container">
+				    <!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide"><img src="img/main-gallery-slide-1.png"></div>
+				        <div class="swiper-slide">Slide 2</div>
+				        <div class="swiper-slide">Slide 3</div>
+				        ...
+				    </div>
+				    <!-- If we need pagination -->
+				    <div class="swiper-pagination"></div>
+				 
+				    <!-- If we need navigation buttons -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+				 
+				    <!-- If we need scrollbar -->
+				    <div class="swiper-scrollbar"></div>
+				</div>
 			</div>
+			<form>
+				<p>הצטרפו עכשיו <br> לפזומט</p>
+				<div class="inputs d-flex flex-column align-items-center justify-content-between">
+					<input placeholder="ח.פ./ת.ז" type="password" name="id">
+					<input placeholder="איש קשר" type="text" name="contact">
+					<input placeholder="טלפון נייד" type="text" name="phone_number"><br>
+					<button>חזרו אליי</button>
+				</div>
+			</form>
 		</div>
 		
-		<form class="form d-lg-none">
-			<h1>--form--</h1>
-		</form>
+		
 		<div class="container gallery-nav-section">
     		<nav class="gallery-nav navbar navbar-expand-lg">
     			<ul class="d-flex flex-lg-row flex-column justify-content-around align-items-center col">
@@ -303,5 +329,7 @@
 			</div>
 		</footer>
 	</section>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="node_modules/swiper/dist/js/swiper.min.js"></script>
 </body>
 </html>

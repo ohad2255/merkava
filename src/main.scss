@@ -57,6 +57,10 @@ header {
 		
 		.top-sec-nav {
 			padding:0;
+			@media (max-width: $screen-xs-min) { 
+				
+			}		
+
 			.logo {
 				.pazlogo {
 					width: 115px;
@@ -279,6 +283,7 @@ header {
 // top-section //
 
 .top-section {
+	margin-top: 60px;
 	direction: rtl;
 	padding: 0;
 
@@ -287,29 +292,66 @@ header {
 	}
 
 	.gallery {
-		height: 435px;
-		background-color: $blue-color-nav;
-		text-align: center;
+		position: relative;
+		.swiper-container {
+			height: 435px;
+		}
+		
 		@media (max-width: $screen-md-min){
-			height: 1270px;	
+				
 		}
 		@media (max-width: $screen-xs-min) { 
-			height: 301px;
-		}	
-	}
 
-	.form {
-		height: 996px;
-		background-color: $paz-yellow;
-		text-align: center;
-		@media (max-width: $screen-xs-min) { 
-			height: 334px;
 		}	
+
+		form {
+			width: 330px;
+			height: 385px;
+			position: absolute;
+			top: 0px;
+			z-index: 100;
+			left: 70px;
+			border-radius: 0 0 10px 10px;
+			border: 2px solid $text-white;
+			border-top: none;
+			background-color: $icons-yellow;
+			
+			p {
+				font-size: 20px;
+				color: $form-text;
+				text-align: center;
+				font-weight: 500;
+			}
+
+			.inputs {
+				//margin: 0 auto;
+				input {
+					text-size: 10px;
+					color: $nav-2-text-grey;
+					height: 45px;
+					width: 240px;
+				}
+
+				button {
+					width: 235px;
+					height: 60px;
+					font-size: 15px;
+					font-weight: 500;
+					color: $nav-2-text-grey;
+					text-align: center;
+					background-color: $text-white;
+					box-shadow: 5px 5px 0px 0px $footer-lines;
+				}
+			}	
+			@media (max-width: $screen-xs-min) { 
+				
+			}	
+		}
 	}
 
 	.gallery-nav-section {
 		background-color: $med-grey;
-		border-top: 8px solid $dark-grey;
+		border-top: 8px solid $footer-lines;
 		padding: 0;
 		@media (max-width: $screen-md-min){
 			border: none;
