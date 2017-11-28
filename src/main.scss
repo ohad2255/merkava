@@ -6,6 +6,7 @@ $screen-lg-min: 1320px;
 
 body {
 	font-family: $main-font;
+	border-bottom: 5px solid $icons-yellow;
 }
 
 a {
@@ -265,11 +266,7 @@ header {
 
 				img {
 					width: 235px;
-					//@media (max-width: $screen-md-min) { 
-						//width: 100%;
-						//width: 370px;
-						//margin-right: 40px;
-					//}
+					
 					@media (max-width: $screen-xs-min) { 
 						width: 126px;
 					}	
@@ -410,7 +407,6 @@ header {
 					}
 
 					img{
-						//box-shadow: -8px -8px 0px 0px $med-grey;
 						@media (max-width: $screen-md-min){
 
 						}
@@ -421,7 +417,6 @@ header {
 					}
 
 				.gallery-nav-text {
-					//padding-top: 50px;
 					height: 130px;
 					background-color: $text-white;
 					box-shadow: inset -8px -8px 0px 0px $med-grey;
@@ -520,14 +515,13 @@ header {
 			height: 260px;
 			border-bottom: 1px solid $footer-lines;
 			@media (max-width: $screen-xs-min) {
-				height: 320px;
 				border: none;
+				height: 100%;
 			}
 
 			.left-footer {
+				padding: 0 0 0 40px;
 				direction: rtl;
-				flex-grow: 1;
-				margin-right: 120px;
 				@media (max-width: $screen-xs-min) {
 					display: none;
 				}
@@ -535,41 +529,14 @@ header {
 				ul {
 					font-size: 20px;
 					color: $nav-2-text-grey;
+					padding:0;
 	
 					a {
-						padding: 26.5px 0 26.5px 25px;
+						padding: 26.5px 25px;
 						color: $nav-2-text-grey;
 						&:nth-child(-n+3) {
 						border-left: 1px solid $footer-lines;
-							/*@media (max-width: $screen-xs-min) {
-							border: none;
-							padding: 0;
-							}*/
 						}
-						/*@media (max-width: $screen-xs-min) {
-							
-							.icon1{
-								width: 35px;
-							}
-
-							.icon2{
-								width: 20px;
-							}
-
-							.icon3{
-								width: 24px;
-							}
-
-							.icon4{
-								width: 34.3px;
-							}
-							.icon-h{
-								width: 85px;
-								height: 18px;
-								font-size: 15px;
-								text-align: center;
-								color: $nav-2-text-grey;
-							}*/
 					}
 						img {
 							margin-bottom: 10px;
@@ -608,8 +575,7 @@ header {
 
 			.footer-icon-nav-mobile {
 				direction: rtl;
-			    height: 160px;
-				padding: 0 30px;
+				padding: 0 20px;
 				margin: 30px 0;
 
 				.icon-h {
@@ -618,7 +584,24 @@ header {
 					color: $nav-2-text-grey;
 					margin-top: 9px;
 				}
+
+				.icon-h-2{
+					font-size: 15px;
+					text-align: center;
+					color: $nav-2-text-grey;
+					margin-top: 11px;
+				}
+
+				.icon-h-3{
+					font-size: 15px;
+					text-align: center;
+					color: $nav-2-text-grey;
+					margin-top: 7.5px;
+				}
+
 				.top {
+					height: 100%;
+
 					.top-t, .bottom-t {
 						padding: 0;
 					}
@@ -632,7 +615,9 @@ header {
 					}
 				}	
 				.bottom {
-		
+					height: 100%;
+					margin-top: 45px;
+
 					.top-b, .bottom-b {
 						padding: 0;
 					}
@@ -648,16 +633,13 @@ header {
 			}
 			.right-footer {
 				direction: rtl;
-				padding-right: 35px;
+				padding:0 35px 0 0;
 				@media (max-width: $screen-xs-min) {
 					display: none;
 				}
 
 				.r-ul{
 					margin-left: 32px;
-					/*@media (max-width: $screen-xs-min) {
-					margin: 0;
-					}*/
 				}
 
 				ul {
@@ -667,27 +649,12 @@ header {
 					font-weight: 600;
 					color: $nav-2-text-grey;
 					border-left: 1px solid $footer-lines;
-					/*@media (max-width: $screen-xs-min) {
-						border: none;
-						width: 100%;
-					}*/
 
 					a {
 						color: $nav-2-text-grey;
 
 						li {
 							line-height: 32px;
-							/*@media (max-width: $screen-xs-min) {
-							opacity: 0.8;
-							font-size: 13px;
-							line-height: 1.92;
-							letter-spacing: 1.5px;
-							text-align: center;
-							color: $nav-2-text-grey;
-							font-weight: 400;
-							border-left: solid 1px #696969;
-							//display: inline;
-							}*/
 						}
 					}
 				}
@@ -699,12 +666,11 @@ header {
 			direction: rtl;
 			height: 100px;
 			@media (max-width: $screen-xs-min) {
-				height: 170px;
+				height: 100%;
 			}
 
 			.trademark {
-				padding-right: 35px;
-
+				padding: 0 35px 0 0;
 				img {
 					width: 61px;
 				}
@@ -715,7 +681,7 @@ header {
 
 				@media (max-width: $screen-xs-min) {
 					padding: 0;
-					height: 84px;
+					margin: 21px 0;
 					img {
 						width: 33px;
 					}
@@ -729,7 +695,7 @@ header {
 
 			.footer-nav {
 				@media (max-width: $screen-xs-min) {
-					padding: 0 9px 0 0;
+					padding: 0 9px 16px 0;
 					border-bottom: 1px solid $footer-lines;
 				}
 				padding: 0;
