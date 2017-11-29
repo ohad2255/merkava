@@ -305,8 +305,6 @@ header {
 		}	
 
 		form {
-			width: 330px;
-			height: 385px;
 			position: absolute;
 			top: 0px;
 			z-index: 100;
@@ -317,40 +315,95 @@ header {
 			background-color: $icons-yellow;
 			
 			p {
-				font-size: 20px;
+				margin-top: 15px;
+				font-size: 35px;
 				color: $form-text;
 				text-align: center;
 				font-weight: 500;
+				line-height: 1;
 			}
 
 			.inputs {
-				//margin: 0 auto;
+				margin: 20px 40px 0 40px;
+
+				.last-input {
+					margin-bottom: 0;
+				}
+
 				input {
 					text-size: 10px;
 					color: $nav-2-text-grey;
 					height: 45px;
 					width: 240px;
+					border-bottom: 1px solid transparent;
+					margin-bottom: 23px;
+				    background-image: none;
+				    -webkit-box-shadow: none;
+				    -moz-box-shadow: none;
+				    box-shadow: none;
+				    -webkit-input-placeholder { 
+					  color: $input-text;
+					  font-size: 40px;
+					}
 				}
+			}
 
-				button {
-					width: 235px;
-					height: 60px;
-					font-size: 15px;
-					font-weight: 500;
-					color: $nav-2-text-grey;
-					text-align: center;
-					background-color: $text-white;
-					box-shadow: 5px 5px 0px 0px $footer-lines;
-				}
+			button {
+				margin: 0 40px 30px 40px;
+				width: 235px;
+				height: 60px;
+				font-size: 15px;
+				font-weight: 500;
+				color: $nav-2-text-grey;
+				text-align: center;
+				background-color: $text-white;
+				box-shadow: 5px 5px 0px 0px $footer-lines;
 			}	
 			@media (max-width: $screen-xs-min) { 
 				
 			}	
 		}
+
+		.gallery-p {
+			position: absolute;
+			top: 90px;
+			right: 100px;
+			text-align: right;
+			z-index: 101;
+			.first {
+				font-size: 45px;
+				font-weight: 500;
+				color: $gallery-p-yellow;
+				margin-left: 15px;
+			}
+			.second {
+				font-size: 45px;
+				font-weight: 300;
+				color: $text-white;
+			}
+
+			.third {
+				font-size: 22px;
+				font-weight: 400;
+				color: $text-white;
+				margin-top: 10px;
+			}
+
+			button {
+				margin-top: 24px; 
+				font-size: 17px;
+				font-weight: 400;
+				color: $text-white;
+				background-color: $gallery-boutton;
+				border: 1px solid $text-white;
+				width: 282px;
+				height: 55px;
+				box-shadow: 5px 5px 0 $gallery-p-yellow;
+			}
+		}
 	}
 
 	.gallery-nav-section {
-		background-color: $med-grey;
 		border-top: 8px solid $footer-lines;
 		padding: 0;
 		@media (max-width: $screen-md-min){
@@ -389,16 +442,19 @@ header {
 
 					&:hover {
 						.background-icon {
-							transform: scale(1.2);
+							transform: scale(1.1);
 							@media (max-width: $screen-xs-min) {
-								transform: scale(1.1);
+								
 							}
 						}
 
 						.gallery-nav-text {
-							box-shadow: inset -8px -8px 0px 0px $paz-yellow;
+							border: 6px solid $paz-yellow;
+							border-top: 0;
+							border-left: 0;
+							padding: 20 0 10 0;
 							@media (max-width: $screen-xs-min) {
-								box-shadow: inset -4px -4px 0px 0px $paz-yellow;
+								
 							}
 						}
 
@@ -407,6 +463,7 @@ header {
 				
 				
 					.icons-mobile {
+						background-color: $med-grey;
 						padding: 30px 0 50px 0;
 						@media (max-width: $screen-md-min){
 							background-color: $med-grey;
@@ -461,18 +518,22 @@ header {
 				.gallery-nav-text {
 					height: 130px;
 					background-color: $text-white;
-					box-shadow: inset -8px -8px 0px 0px $med-grey;
-					border-top: 20px solid $text-white;
-					border-left: 10px solid $text-white;
+					border: 6px solid $footer-lines;
+					border-top: 0;
+					border-left: 0;
+					margin: 20px 0 0 10px;
+					
 					@media (max-width: $screen-md-min){
 						height: 290px;
 					}
 					@media (max-width: $screen-xs-min) {
 						width: 280px;
 						height: 93px;
-						box-shadow: inset -4px -4px 0px 0px $med-grey;
-						border-top: 14px solid $text-white;
-						border-left: 7px solid $text-white;
+						border: 4px solid $footer-lines;
+						border-top: 0;
+						border-left: 0;
+						margin: 10px 0 0 5px;
+						box-sizing: border-box;
 					}
 				}
 
