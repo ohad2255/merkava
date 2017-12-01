@@ -5,9 +5,8 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>paz</title>
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="dist/main.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.css">
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="dist/main.css" rel="stylesheet">
 </head>
 <body>	
 		<!-- HEADER 1 -->
@@ -18,16 +17,7 @@
     		
     		<!-- top section -->
     		<div class="container top-sec-nav align-items-center d-flex justify-content-between align-items-center col">
-	    		<div class="search">
-	    			<img src="img/search.svg" class="search">
-	    		</div>
-	    		<div class="logo">
-		    		<img src="img/pazlogo.png"
-	     				srcset="img/pazlogo@2x.png 2x,
-	           					img/pazlogo@3x.png 3x"
-	      				class="pazlogo">
-				</div>	
-	    		<div class="lng d-none d-lg-block">
+    			<div class="lng d-none d-lg-block">
 		    		ENG
 				</div>
 				<div class="manu-mobile d-lg-none">
@@ -36,35 +26,44 @@
 				             img/menu@3x.png 3x"
 				     class="menu">
 				</div>
+	    		<div class="logo">
+		    		<img src="img/pazlogo.png"
+	     				srcset="img/pazlogo@2x.png 2x,
+	           					img/pazlogo@3x.png 3x"
+	      				class="pazlogo">
+				</div>	
+	    		<div class="search">
+	    			<img src="img/search.svg" class="search">
+	    		</div>
 			</div>
 		
 			<!-- main nav sec -->
 			<div class="low-sec-nav container d-none d-lg-block">	
 	    		<nav class="main-navigation navbar navbar-nav navbar navbar-expand-lg">
 		    		<ul class="d-flex flex-row">
-		    			<li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">צרו קשר</a>
-				        </li>
 				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">קריירה</a>
-				        </li>
-				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">קשרי משקיעים</a>
-				        </li>
-				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">התחנות שלנו</a>
-				        </li>
-				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">פזומט</a>
-				        </li>
-				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">חברות הקבוצה</a>
+				        	<a class="nav-link" href="#">אודות</a>
 				        </li>
 				        <li class="nav-item active d-flex justify-content-center align-items-center">
 				        	<a class="nav-link" href="#">אחריות תאגידית</a>
 				        </li>
 				        <li class="nav-item active d-flex justify-content-center align-items-center">
-				        	<a class="nav-link" href="#">אודות</a>
+				        	<a class="nav-link" href="#">חברות הקבוצה</a>
+				        </li>
+				        <li class="nav-item active d-flex justify-content-center align-items-center">
+				        	<a class="nav-link" href="#">פזומט</a>
+				        </li>
+				        <li class="nav-item active d-flex justify-content-center align-items-center">
+				        	<a class="nav-link" href="#">התחנות שלנו</a>
+				        </li>
+				        <li class="nav-item active d-flex justify-content-center align-items-center">
+				        	<a class="nav-link" href="#">קשרי משקיעים</a>
+				        </li>
+				        <li class="nav-item active d-flex justify-content-center align-items-center">
+				        	<a class="nav-link" href="#">קריירה</a>
+				        </li>
+				        <li class="nav-item active d-flex justify-content-center align-items-center">
+				        	<a class="nav-link" href="#">צרו קשר</a>
 				        </li>
 		    		</ul>
 	    		</nav>
@@ -75,55 +74,56 @@
 	    <!-- reg and personal erea -->
 		<div class="pazomat-header container-fluid d-flex align-items-center justify-content-between">
     		<div class="container d-flex justify-content-lg-between">
-    			<div class="l-side-gray-nav d-flex justify-content-lg-between">
-	    			<div class="left-buttons d-flex justify-content-start">
-	    				<button class="button pazomat-mobile-menu-trigger d-flex align-items-center justify-content-center flex-column d-lg-none">
-				    			<img src="img/menu.svg"
-     							class="menu">
-				    			<p>תפריט</p>
-				    	</button>
-		    			<button class="button pazomat-signup d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
-		    				<img src="img/signin.svg"
- 							class="signin">
-		    				<p class="d-none d-lg-block">הרשמה<br>לאתר פזומט</p>
-		    				<p class="d-lg-none">הרשמה</p>
-		    			</button>
-	    			 
-		    			<button class="button pazomat-login d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
-		    				<img src="img/login.svg"
- 							class="login">
-		    				<p class="d-none d-lg-block">כניסה<br>לאיזור האישי</p>
-		    				<p class="d-lg-none">כניסה</p>
-		    			</button>
-			    	</div>
-	    		</div>
-    			<div class="r-side-gray-nav d-flex justify-content-end align-items-center col-lg-8">
+    			
+    			<div class="r-side-gray-nav d-flex justify-content-start align-items-center col-lg-8">
+    				<div class="pazomat-logo-sub-nav">
+				        <img src="img/pazomat-logo.svg"
+    					 class="pazomat-logo">
+					</div>
     				<div class="d-none d-lg-block">
 	    				<ul class="sub-nav-pazomat d-flex flex-row navbar-nav navbar navbar-expand-lg">
 					        <li class="nav-item active">
 					        	<a class="nav-link" href="#">אודות
 					        	</a>
 					        </li>
-					         <li class="nav-item active">
+					        <li class="nav-item active">
+					        	<a class="nav-link" href="#">נקודות שירות
+					        	</a>
+					        </li>
+					        <li class="nav-item active">
 					        	<a class="nav-link" href="#">טסטים ושירותים</a>
 					        </li>
 					        <li class="nav-item active">
 					        	<a class="nav-link" href="#">מחירונים</a>
 					        </li>
-					        <li class="nav-item active">
+					         <li class="nav-item active">
 					        	<a class="nav-link" href="#">שירותים</a>
-					        </li>
-					        <li class="nav-item active">
-					        	<a class="nav-link" href="#">נקודות שירות
-					        	</a>
 					        </li>
 			    		</ul>
 			    	</div>
-		    		<div class="pazomat-logo-sub-nav">
-				        <img src="img/pazomat-logo.svg"
-    					 class="pazomat-logo">
-					</div>
+		    		
     			</div>
+    			<div class="l-side-gray-nav d-flex justify-content-lg-between">
+	    			<div class="left-buttons d-flex justify-content-start">
+	    				<button class="button pazomat-login d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
+		    				<img src="img/login.svg"
+ 							class="login">
+		    				<p class="d-none d-lg-block">כניסה<br>לאיזור האישי</p>
+		    				<p class="d-lg-none">כניסה</p>
+		    			</button>
+		    			<button class="button pazomat-signup d-flex align-items-center justify-content-center justify-content-lg-around flex-lg-row flex-column">
+		    				<img src="img/signin.svg"
+ 							class="signin">
+		    				<p class="d-none d-lg-block">הרשמה<br>לאתר פזומט</p>
+		    				<p class="d-lg-none">הרשמה</p>
+		    			</button>
+		    			<button class="button pazomat-mobile-menu-trigger d-flex align-items-center justify-content-center flex-column d-lg-none">
+				    			<img src="img/menu.svg"
+     							class="menu">
+				    			<p>תפריט</p>
+				    	</button>
+			    	</div>
+	    		</div>
 			</div>
 		</div>
 	</header>
@@ -133,23 +133,26 @@
 		<div class="gallery">
 			<div class="Locating-stations">
 				<div class="swiper-container">
-				    <!-- Additional required wrapper -->
 				    <div class="swiper-wrapper">
-				        <!-- Slides -->
-				        <div class="swiper-slide"><img src="img/main-gallery-slide-1.png"></div>
-				        <div class="swiper-slide"><img src="img/main-gallery-slide-1.png"></div>
-				        <div class="swiper-slide"><img src="img/main-gallery-slide-1.png"></div>
-				        ...
+				        <div id="swiper-slide-1" class="swiper-slide">
+				        	<div class="gallery-p">
+								<p class="d-inline first">בכל מקום</p><p class="d-inline second">בדרך שלך</p>
+								<p class="third">הפריסה הארצית הרחבה והנגישה<br>בישראל עם למעלה מ-280 תחנות<br>תדלוק ברחבי הארץ!</p>
+								<button class="gallery-button">
+									לאיתור תחנות פזומט
+								</button>	
+							</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="img/main-gallery-slide-1.png">
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="img/main-gallery-slide-1.png">
+				        </div>
 				    </div>
-				    <!-- If we need pagination -->
 				    <div class="swiper-pagination"></div>
-				 
-				    <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev  swiper-button-white"></div>
 				    <div class="swiper-button-next  swiper-button-white"></div>
-				 
-				    <!-- If we need scrollbar -->
-				    <div class="swiper-scrollbar"></div>
 				</div>
 			</div>
 			<form>
@@ -161,13 +164,6 @@
 				</div>
 				<button>חזרו אליי</button>
 			</form>
-			<div class="gallery-p">
-				<p class="d-inline first">בכל מקום</p><p class="d-inline second">בדרך שלך</p>
-				<p class="third">הפריסה הארצית הרחבה והנגישה<br>בישראל עם למעלה מ-280 תחנות<br>תדלוק ברחבי הארץ!</p>
-				<button class="gallery-button">
-					לאיתור תחנות פזומט
-				</button>	
-			</div>
 		</div>
 		
 		
@@ -279,6 +275,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="right-footer d-lg-flex justify-content-start align-items-center">
+					<ul class="r-ul">
+						<a href=""><li>עמוד הבית</li></a>
+						<a href=""><li>אודות</li></a>
+						<a href=""><li>אחריות תאגידית</li></a>
+						<a href=""><li>חברות הקבוצה</li></a>
+					</ul>
+					<ul class="l-ul">
+						<a href=""><li>התחנות שלנו</li></a>
+						<a href=""><li>קשרי משקיעים</li></a>
+						<a href=""><li>קריירה</li></a>
+						<a href=""><li>צור קשר</li></a>
+					</ul>
+				</div>
 				<div class="left-footer d-lg-flex row">
 					<ul class="d-flex flex-lg-row flex-column align-items-center justify-content-between">
 						<a href="">
@@ -307,20 +317,7 @@
 						</a>
 					</ul>
 				</div>
-				<div class="right-footer d-lg-flex justify-content-start align-items-center">
-					<ul class="r-ul">
-						<a href=""><li>עמוד הבית</li></a>
-						<a href=""><li>אודות</li></a>
-						<a href=""><li>אחריות תאגידית</li></a>
-						<a href=""><li>חברות הקבוצה</li></a>
-					</ul>
-					<ul class="l-ul">
-						<a href=""><li>התחנות שלנו</li></a>
-						<a href=""><li>קשרי משקיעים</li></a>
-						<a href=""><li>קריירה</li></a>
-						<a href=""><li>צור קשר</li></a>
-					</ul>
-				</div>
+				
 			</div>
 			<div class="bottom-footer container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between">
 				<div class="trademark flex-column flex-lg-row d-flex align-items-center justify-content-lg-start justify-content-center">
@@ -336,6 +333,7 @@
 			</div>
 		</footer>
 	</section>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/swiper/dist/js/swiper.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
