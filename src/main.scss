@@ -111,7 +111,7 @@ header {
 .low-sec-nav {
 	padding: 0;
 
-	.nav-1 {
+	.main-navigation {
 		padding: 0;
 
 		ul {
@@ -120,6 +120,9 @@ header {
 			height: 70px;
 
 			li {
+				flex: 1;
+				border: 0;
+				border-bottom: 1px solid $text-white;
 				&:hover {
 					color: $paz-yellow;
 					border-bottom: 4px solid $paz-yellow;
@@ -136,7 +139,7 @@ header {
 }
 
 // nav 2 //
-.nav-2 {	
+.pazomat-header {	
 	background-color: $nav-2-color;
 	height: 100px;
 	@media (max-width: $screen-md-min){
@@ -160,6 +163,7 @@ header {
 						padding: 0
 					}
 					.button {
+						background-color: $med-grey;						
 						direction: rtl;
 						height: 100%;
 						width: 164px;
@@ -190,7 +194,7 @@ header {
 						}
 					}
 
-					.button-3 {
+					.pazomat-mobile-menu-trigger {
 						padding: 0;
 						height: 100%;
 						background-color: $nav-2-color;
@@ -205,7 +209,7 @@ header {
 						}
 					}
 
-					.button-1 {
+					.pazomat-signup {
 						margin-right: 3px;
 						@media (max-width: $screen-xs-min) { 
 							margin-right: 0;
@@ -220,7 +224,7 @@ header {
 						}
 					}
 
-					.button-2 {
+					.pazomat-login {
 						img {
 							height: 30px;
 							@media (max-width: $screen-xs-min) { 
@@ -236,7 +240,7 @@ header {
 			@media (max-width: $screen-xs-min) { 
 				padding: 0;
 			}
-			.sub-nav-1 {
+			.sub-nav-pazomat {
 				font-size:15px;
 				font-weight: 500;
 				list-style: none;
@@ -262,7 +266,7 @@ header {
 				}
 			}
 
-			.paz-logo-nav-2 {
+			.pazomat-logo-sub-nav {
 				padding-left: 24px;
 				@media (max-width: $screen-xs-min) { 
 					margin:0 0 0 8px;
@@ -325,6 +329,7 @@ header {
 
 			.inputs {
 				margin: 20px 40px 0 40px;
+				border: 0;
 
 				.last-input {
 					margin-bottom: 0;
