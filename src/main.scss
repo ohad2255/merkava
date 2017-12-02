@@ -290,17 +290,27 @@ header {
 	margin-top: 60px;
 	padding: 0;
 
+	@media (max-width: $screen-xs-min) { 
+		margin: 0;
+	}	
+
 	.navbar {
 		padding: 0;
 	}
 
 	.gallery {
 		position: relative;
+		@media (max-width: $screen-xs-min) { 
+
+		}
 		.swiper-container {
 			height: 435px;
 
 			#swiper-slide-1 {
 				background-image: url('img/main-gallery-slide-1.png');
+				@media (max-width: $screen-xs-min) { 
+					background-image: url('img/mobile-gallery-img.png')
+				}
 			}
 		}
 		
@@ -379,14 +389,18 @@ header {
 			right: 100px;
 			text-align: right;
 			z-index: 101;
+			font-size: 45px;
+			@media (max-width: $screen-xs-min) { 
+				font-size: 27px;
+				right: 20px;
+				top: 170px;
+			}
 			.first {
-				font-size: 45px;
 				font-weight: 500;
 				color: $gallery-p-yellow;
 				margin-left: 15px;
 			}
 			.second {
-				font-size: 45px;
 				font-weight: 300;
 				color: $text-white;
 			}
@@ -396,6 +410,9 @@ header {
 				font-weight: 400;
 				color: $text-white;
 				margin-top: 10px;
+				@media (max-width: $screen-xs-min) { 
+				font-size: 15px;
+				}
 			}
 
 			button {
@@ -609,6 +626,11 @@ header {
 		}
 		#mishpatiot-slider {
 			height: 100%;
+
+			.swiper-button-down {
+				-webkit-transform: rotate(-90deg);
+			}
+
 			.mishpatiot-right-buttons {	
 				height: 120px;
 				width: 170px;
@@ -637,8 +659,44 @@ header {
 				}
 			}
 
-			.swiper-button-down {
-				-webkit-transform: rotate(-90deg);
+			.mishpatiot-swiper-wrapper {
+				.swiper-slide {
+					margin-right: 95px;
+					.slide-1-con {
+						text-align: right;
+						.first {
+							margin: 0;
+							font-size: 17px;
+							font-weight: 600;
+							color: $nav-2-text-grey;
+						}
+						.second {
+							margin: 0;
+							font-size: 17px;
+							color: $nav-2-text-grey;
+						}
+
+						.play-btn-border {
+							width: 52px;
+							height: 52px;
+							margin-left: 38px;
+							border-radius: 50%;
+							border: 2px solid $light-blue-nav;
+							display: inline-block;
+							.play-btn {
+								width: 0; 
+								height: 0; 
+								border-top: 10px solid transparent;
+								border-bottom: 10px solid transparent;
+								border-left: 15px solid $light-blue-nav;
+								margin-right: -5px;
+							}
+						}
+						.slide-1-p {
+							height: 52px;
+						}
+					}
+				}
 			}
 		}
 	}
