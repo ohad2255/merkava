@@ -610,15 +610,29 @@ header {
 		#mishpatiot-slider {
 			height: 100%;
 			.mishpatiot-right-buttons {	
+				height: 120px;
+				width: 170px;
+				background-color: red;
+				position: relative;
 				span {
 					position: absolute;
-					right: 40px;
-					top: 50%;
 					font-size: 30px;
 					font-weight: 300;
 				}
 				.swiper-button-next-right {
-					right: 118px;
+					//right: 118px;
+				}
+
+				.fraction-pagination{
+					width: 55px;
+					height: 25px;
+					direction: ltr;
+
+					span {
+						position: relative;
+						font-size: 30px;
+						font-weight: 300;
+					}
 				}
 			}
 
