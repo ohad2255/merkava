@@ -612,8 +612,7 @@ header {
 			.mishpatiot-right-buttons {	
 				height: 120px;
 				width: 170px;
-				background-color: red;
-				position: relative;
+				position: absolute;
 				span {
 					position: absolute;
 					font-size: 30px;
@@ -627,6 +626,8 @@ header {
 					width: 55px;
 					height: 25px;
 					direction: ltr;
+				    top: 38px;
+    				right: 58px;
 
 					span {
 						position: relative;
