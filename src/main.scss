@@ -312,15 +312,16 @@ header {
 		}	
 
 		form {
-			position: absolute;
-			top: 0px;
-			z-index: 100;
-			left: 70px;
 			border-radius: 0 0 10px 10px;
 			border: 2px solid $text-white;
 			border-top: none;
 			background-color: $icons-yellow;
-			
+			@media (min-width: $screen-md-min) { 
+				position: absolute;
+				top: 0px;
+				z-index: 100;
+				left: 70px;
+			}	
 			p {
 				margin-top: 15px;
 				font-size: 35px;
@@ -606,6 +607,25 @@ header {
 		@media (max-width: $screen-xs-min) {
 			height: 195px;
 		}
+		#mishpatiot-slider {
+			height: 100%;
+			.mishpatiot-right-buttons {	
+				span {
+					position: absolute;
+					right: 40px;
+					top: 50%;
+					font-size: 30px;
+					font-weight: 300;
+				}
+				.swiper-button-next-right {
+					right: 118px;
+				}
+			}
+
+			.swiper-button-down {
+				-webkit-transform: rotate(-90deg);
+			}
+		}
 	}
 
 	.logo-gallery {
@@ -615,6 +635,18 @@ header {
 		@media (max-width: $screen-xs-min) {
 			height: 107px;
 			border-bottom: solid 5px $med-grey;
+		}
+		.swiper-container {
+			height: 100%;
+			.swiper-logos {
+				img {
+					margin-left: 30px;
+					height: 42px;
+				}
+				.last {
+					margin: 0;
+				}
+			}
 		}
 	}
 
