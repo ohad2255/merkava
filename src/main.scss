@@ -309,7 +309,8 @@ header {
 			#swiper-slide-1 {
 				background-image: url('img/main-gallery-slide-1.png');
 				@media (max-width: $screen-xs-min) { 
-					background-image: url('img/mobile-gallery-img.png')
+					background-image: url('img/mobile-gallery-img.png');
+					background-repeat: no-repeat
 				}
 			}
 		}
@@ -332,6 +333,13 @@ header {
 				z-index: 100;
 				left: 70px;
 			}	
+
+			@media (max-width: $screen-xs-min) { 
+				border-radius: 15px;
+				margin: auto;
+				width: 300px;
+			}
+
 			p {
 				margin-top: 15px;
 				font-size: 35px;
@@ -344,6 +352,9 @@ header {
 			.inputs {
 				margin: 20px 40px 0 40px;
 				border: 0;
+				@media (max-width: $screen-xs-min) { 
+					
+				}
 
 				.last-input {
 					margin-bottom: 0;
@@ -364,6 +375,10 @@ header {
 					  color: $input-text;
 					  font-size: 40px;
 					}
+					@media (max-width: $screen-xs-min) { 
+						height: 40px;
+						width: 270px;
+					}
 				}
 			}
 
@@ -376,57 +391,112 @@ header {
 				color: $nav-2-text-grey;
 				text-align: center;
 				background-color: $text-white;
-				box-shadow: 5px 5px 0px 0px $footer-lines;
+				box-shadow: 5px 5px 0px 0px $gallery-button-shadow;
+				/*@media (max-width: $screen-xs-min) { 
+					width: 268px;
+					height: 46px;
+					object-fit: contain;
+					margin: 10px 15px 30px 17px;
+					box-shadow: 5px 5px 0px 0px $gallery-button-shadow;
+				}*/
 			}	
 			@media (max-width: $screen-xs-min) { 
 				
 			}	
 		}
 
-		.gallery-p {
-			position: absolute;
-			top: 90px;
-			right: 100px;
-			text-align: right;
-			z-index: 101;
-			font-size: 45px;
-			@media (max-width: $screen-xs-min) { 
-				font-size: 27px;
-				right: 20px;
-				top: 170px;
-			}
-			.first {
-				font-weight: 500;
-				color: $gallery-p-yellow;
-				margin-left: 15px;
-			}
-			.second {
-				font-weight: 300;
-				color: $text-white;
-			}
+		#swiper-slide-1 {
 
-			.third {
-				font-size: 22px;
-				font-weight: 400;
-				color: $text-white;
-				margin-top: 10px;
+			.gallery-p {
+				position: absolute;
+				top: 90px;
+				right: 100px;
+				text-align: right;
+				z-index: 101;
+				font-size: 45px;
 				@media (max-width: $screen-xs-min) { 
-				font-size: 15px;
+					font-size: 27px;
+					right: 20px;
+					top: 170px;
+					text-align: center;
+				}
+				.first {
+					font-weight: 500;
+					color: $gallery-p-yellow;
+					margin-left: 15px;
+					@media (max-width: $screen-xs-min) { 
+						font-size: 21px;
+						font-weight: 500;
+						line-height: 0.95;
+						text-align: center;
+						text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+						margin-left: 0px;
+					}
+				}
+				.second {
+					font-weight: 300;
+					color: $text-white;
+					@media (max-width: $screen-xs-min) { 
+						font-size: 21px;
+						line-height: 0.95;
+						text-align: center;
+						text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+					}
+				}
+
+				.third {
+					font-size: 22px;
+					font-weight: 400;
+					color: $text-white;
+					margin-top: 10px;
+					@media (max-width: $screen-xs-min) { 
+					font-size: 15px;
+					line-height: 1.33;
+					text-align: center;
+					}
+				}
+
+				button {
+					margin-top: 24px; 
+					font-size: 17px;
+					font-weight: 400;
+					color: $text-white;
+					background-color: $gallery-button;
+					border: 1px solid $text-white;
+					width: 282px;
+					height: 55px;
+					box-shadow: 5px 5px 0 $gallery-p-yellow;
+					@media (max-width: $screen-xs-min) { 
+						width: 278px;
+						height: 46px;
+						object-fit: contain;
+					}
 				}
 			}
 
-			button {
-				margin-top: 24px; 
-				font-size: 17px;
-				font-weight: 400;
-				color: $text-white;
-				background-color: $gallery-boutton;
-				border: 1px solid $text-white;
-				width: 282px;
-				height: 55px;
-				box-shadow: 5px 5px 0 $gallery-p-yellow;
+			.blue-background {
+				height: 210px;
+				width: 320px;
+				position: absolute;
+				bottom: 0;
+  				background-image: linear-gradient(to bottom, #264f8e, rgba(38, 79, 142, 0));
+				-webkit-box-shadow: 0px -20px 20px 7px rgba(38, 79, 142, 1);
 			}
 		}
+		#swiper-slide-2 {
+			background-color: gray;
+			text-align: center;
+		}
+
+		#swiper-slide-3 {
+			background-color: gray;
+			text-align: center;
+		}
+
+	}
+
+	.main-pagination {
+		direction: ltr;
 	}
 
 	.gallery-nav-section {
