@@ -304,6 +304,7 @@ header {
 
 		}
 		.main-gallery{
+
 			.swiper-container {
 				height: 435px;
 			
@@ -419,7 +420,7 @@ header {
 
 					.swiper-pagination-bullet {
 						border-radius: 0;
-						
+
 						@media (max-width: $screen-xs-min) { 
 							width: 6px;
 							height: 6px;
@@ -445,6 +446,7 @@ header {
 				}
 			}
 		}
+
 		form {
 					border-radius: 0 0 10px 10px;
 					border: 2px solid $text-white;
@@ -458,7 +460,7 @@ header {
 					}	
 
 					@media (max-width: $screen-xs-min) { 
-						border-radius: 15px;
+						border-radius: 12px;
 						margin: auto;
 						width: 300px;
 					}
@@ -584,7 +586,7 @@ header {
 							border-left: 0;
 							padding: 20 0 10 0;
 							@media (max-width: $screen-xs-min) {
-								
+
 							}
 						}
 
@@ -657,7 +659,7 @@ header {
 						height: 290px;
 					}
 					@media (max-width: $screen-xs-min) {
-						width: 280px;
+						width: 275px;
 						height: 93px;
 						border: 4px solid $footer-lines;
 						border-top: 0;
@@ -727,26 +729,58 @@ header {
 		background-color: $nav-2-color;
 		@media (max-width: $screen-xs-min) {
 			height: 195px;
+			background-color: $nav-2-color;
 		}
+
 		#mishpatiot-slider {
 			height: 100%;
+			.first-mobile {
+				font-size: 17px;
+				letter-spacing: 1.6px;
+				color: $mobile-text-color;
+				position: absolute;
+				top: 10px;
+    			right: 55px;    
+			}
 
 			.swiper-button-down {
 				-webkit-transform: rotate(-90deg);
+				@media (max-width: $screen-xs-min) {
+					display: none;
+				}
 			}
 
 			.mishpatiot-right-buttons {	
 				height: 120px;
 				width: 170px;
 				position: absolute;
+				@media (max-width: $screen-xs-min) {
+					height: 100%;
+					width: 100%;
+				}
+
+				.mishpatiot-prev {
+					@media (max-width: $screen-xs-min) {
+					object-fit: contain;
+   					background-size: 15px 25px;
+   					fill: $mobile-text-color;
+   					}
+				}
+
+				.mishpatiot-next {
+					@media (max-width: $screen-xs-min) {
+					object-fit: contain;
+   					background-size: 15px 25px;
+   					 fill: $mobile-text-color;
+   					}
+				}
+
 				span {
 					position: absolute;
 					font-size: 30px;
 					font-weight: 300;
 				}
-				.swiper-button-next-right {
-					//right: 118px;
-				}
+
 
 				.fraction-pagination{
 					width: 55px;
@@ -754,11 +788,29 @@ header {
 					direction: ltr;
 				    top: 38px;
     				right: 58px;
-
+    				@media (max-width: $screen-xs-min) {
+						right: 0px;
+						top: 0px;
+						width: 48px;
+						height: 48px;
+						background-color: $footer-lines;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.swiper-pagination-current {
+							padding-right: 2px;
+						}
+						.swiper-pagination-total {
+							padding-left: 2px;
+						}
+					}
 					span {
 						position: relative;
 						font-size: 30px;
 						font-weight: 300;
+						@media (max-width: $screen-xs-min) {
+						font-size: 15px;
+						}
 					}
 				}
 			}
@@ -766,18 +818,36 @@ header {
 			.mishpatiot-swiper-wrapper {
 				.swiper-slide {
 					margin-right: 95px;
+					@media (max-width: $screen-xs-min) {
+						margin: 0;
+					}
 					.slide-1-con {
 						text-align: right;
+						a {
+							.play-btn-border {
+								@media (max-width: $screen-xs-min) {
+									display: none;
+								}
+							}
+						}
+
 						.first {
 							margin: 0;
 							font-size: 17px;
 							font-weight: 600;
 							color: $nav-2-text-grey;
+							@media (max-width: $screen-xs-min) {
+								display: none;
+							}
 						}
 						.second {
 							margin: 0;
 							font-size: 17px;
 							color: $nav-2-text-grey;
+							@media (max-width: $screen-xs-min) {
+								font-size: 12px;
+								margin: auto;
+							}
 						}
 
 						.play-btn-border {
@@ -798,6 +868,10 @@ header {
 						}
 						.slide-1-p {
 							height: 52px;
+							@media (max-width: $screen-xs-min) {
+								height: 72px;
+								width: 223px;
+							}
 						}
 					}
 				}
@@ -815,13 +889,45 @@ header {
 		}
 		.swiper-container {
 			height: 100%;
-			.swiper-logos {
-				img {
-					margin-left: 30px;
-					height: 42px;
+			.swiper-wrapper {
+				@media (max-width: $screen-xs-min) {
+					img {
+						width: 111px;
+						height: 32px;
+						margin-left: 31px;
+					}
 				}
-				.last {
-					margin: 0;
+
+				.swiper-logos {
+					img {
+						margin-left: 30px;
+						height: 42px;
+						@media (max-width: $screen-xs-min) {
+							width: 111px;
+							height: 32px;
+							margin-left: 31px;
+						}
+					}
+					.last {
+						margin: 0;
+					}
+
+					.img-just-lg {
+						@media (max-width: $screen-xs-min) {
+							display: none;
+						}
+					}
+				}
+			}
+			.logos-prev {
+				@media (max-width: $screen-xs-min) {
+					display: none;
+				}
+			}
+
+			.logos-next {
+				@media (max-width: $screen-xs-min) {
+					display: none;
 				}
 			}
 		}
