@@ -1,7 +1,7 @@
 @import "color-palette.scss";
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=hebrew');
 $screen-xs-min: 320px;
-$screen-md-min: 768px;
+$screen-md-min: 1080px;
 $screen-lg-min: 1320px;
 
 body {
@@ -49,7 +49,7 @@ header {
 		height: 188px;
 		background-color: $blue-color-nav;
 		@media (max-width: $screen-md-min) { 
-			height: 120px;
+			//height: 120px;
 		}
 
 		@media (max-width: $screen-xs-min) { 
@@ -96,8 +96,9 @@ header {
 		}
 
 		.manu-mobile {
+			background-color: inherit;
 			margin-right: 30px;
-			img{
+			img {
 				@media (max-width: $screen-md-min) { 
 					width: 40px;
 				}
@@ -293,6 +294,12 @@ header {
 
 			.pazomat-logo-sub-nav {
 				padding-left: 24px;
+
+				@media (max-width: $screen-md-min) { 
+					margin: 0 30px 0 0;
+					padding: 0;
+				}
+
 				@media (max-width: $screen-xs-min) { 
 					margin:0 0 0 8px;
 				}
@@ -314,6 +321,9 @@ header {
 .top-section {
 	margin-top: 60px;
 	padding: 0;
+	@media (max-width: $screen-md-min) { 
+		margin: 0;
+	}
 
 	@media (max-width: $screen-xs-min) { 
 		margin: 0;
@@ -341,10 +351,10 @@ header {
 				}
 				#swiper-slide-1 {
 					background-image: url('img/main-gallery-slide-1.png');
-						@media (max-width: $screen-xs-min) { 
-							background-image: url('img/mobile-gallery-img.png');
-							background-repeat: no-repeat;
-						}
+					@media (max-width: $screen-xs-min) { 
+						background-image: url('img/mobile-gallery-img.png');
+						background-repeat: no-repeat;
+					}
 
 					.gallery-p {
 						position: absolute;
@@ -460,14 +470,45 @@ header {
 						-webkit-box-shadow: 0px -11px 70px 50px rgba(38, 79, 142, 1);
 					}
 				}
+
 				#swiper-slide-2 {
 					background-color: gray;
 					text-align: center;
+					p {
+						position: absolute;
+						top: 90px;
+						right: 100px;
+						font-size: 30px;
+						height: 270px;
+						width: 400px;
+						background-color: $paz-yellow;
+						@media (max-width: $screen-md-min) { 
+							top: 90px;
+    						right: 65px;
+    						height: 250px;
+							width: 285px;
+						}
+					}
 				}
 
 				#swiper-slide-3 {
 					background-color: gray;
 					text-align: center;
+					p { 
+						position: absolute;
+						top: 90px;
+						right: 100px;
+						font-size: 30px;
+						height: 270px;
+						width: 400px;
+						background-color: $paz-yellow;
+						@media (max-width: $screen-md-min) { 
+							top: 90px;
+    						right: 65px;
+    						height: 250px;
+							width: 285px;
+						}
+					}
 				}
 				.main-pagination {
 					direction: ltr;
@@ -551,7 +592,6 @@ header {
 				}
 
 				input {
-					text-size: 10px;
 					color: $nav-2-text-grey;
 					height: 45px;
 					width: 240px;
@@ -561,6 +601,7 @@ header {
 				    -webkit-box-shadow: none;
 				    -moz-box-shadow: none;
 				    box-shadow: none;
+				    padding-right: 6px;
 				    -webkit-input-placeholder { 
 					  color: $input-text;
 					  font-size: 40px;
@@ -906,6 +947,7 @@ header {
 					@media (max-width: $screen-xs-min) {
 						margin: 0;
 					}
+
 					.slide-1-con {
 						text-align: right;
 						a {
