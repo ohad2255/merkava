@@ -1,8 +1,8 @@
 @import "color-palette.scss";
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=hebrew');
-$screen-xs-min: 320px;
-$screen-md-min: 1080px;
-$screen-lg-min: 1320px;
+$screen-xs-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
 
 body {
 	font-family: $main-font;
